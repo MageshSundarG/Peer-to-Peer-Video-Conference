@@ -31,11 +31,13 @@ navigator.mediaDevices.getUserMedia({
   // when press enter send message
   $('html').keydown(function (e) {
     if (e.which == 13 && text.val().length !== 0) {
+      console.log(text.val());
       socket.emit('message', text.val());
       text.val('')
     }
   });
   socket.on("createMessage", message => {
+    // $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
     $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
     scrollToBottom()
   })
@@ -74,7 +76,7 @@ const connectToNewUser = (userId, stream) => {
 
 
 const scrollToBottom = () => {
-  var d = $('.main__chat_window');
+  let d = $('.main__chat_window');
   d.scrollTop(d.prop("scrollHeight"));
 }
 
