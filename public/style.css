@@ -1,5 +1,9 @@
+.main, html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .main {
-    height: 100vh;
     display: flex;
 }
 
@@ -43,6 +47,16 @@
 }
 
 .main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__startButton {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,4 +115,3 @@
 .unmute, .stop {
     color: #CC3B33;
 }
-
