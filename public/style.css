@@ -1,6 +1,8 @@
 .main, html, body {
     height: 100%;
     margin: 0;
+    font-weight: 300;
+    word-break: break-word;
 }
 
 .main {
@@ -23,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .main__controls {
@@ -66,6 +68,17 @@
     cursor: pointer;
 }
 
+.main__controls__streamButton {
+    display: flex;
+    color: #EB534B;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
 .main__controls__button:hover {
     background-color: #343434;
     border-radius: 5px;
@@ -81,6 +94,41 @@
 }
 
 .main__controls__startButton i {
+    font-size: 24px;
+}
+
+.main__controls__streamButton i {
+    font-size: 24px;
+}
+
+.main__controls__leaveButton {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__streamButton:hover {
+    background-color: #EB534B;
+    color: white;
+    border-radius: 5px;
+}
+
+.main__controls__leaveButton:hover {
+    background-color: white;
+    color: #EB534B;
+    border-radius: 5px;
+}
+
+.main__controls__leaveButton i {
+    font-size: 24px;
+}
+
+.main__controls__streamButton i {
     font-size: 24px;
 }
 
@@ -117,10 +165,102 @@
     color: #F5F5F5;
 }
 
-.leave_meeting {
-    color: #EB534B;
-}
+/* .leave_meeting {
+    color: white;
+} */
+
+
 
 .unmute, .stop {
     color: #CC3B33;
 }
+
+
+ .hidden {
+    display: none;
+  }
+  
+  .highlight {
+    background-color: #eee;
+    font-size: 1.2em;
+    margin: 0 0 30px 0;
+    padding: 0.2em 1.5em;
+  }
+  
+  .warning {
+    color: red;
+    font-weight: 400;
+  }
+  
+  button {
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    margin: 0 0 1em 0;
+    padding: 0.5em 0.7em 0.6em 0.7em;
+  }
+  
+  button:active {
+    background-color: #cf402f;
+  }
+  
+  button:hover {
+    background-color: #cf402f;
+  }
+  
+  button[disabled] {
+    color: #ccc;
+  }
+  
+  button[disabled]:hover {
+    background-color: #d84a38;
+  }
+  html {
+    /* avoid annoying page width change
+    when moving from the home page */
+    overflow-y: scroll;
+  }
+  
+  input[type=radio] {
+    position: relative;
+    top: -1px;
+  }
+  
+  div#errorMsg p {
+    color: #F00;
+  }
+  
+  textarea {
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  video {
+    background: #222;
+    margin: 0 0 20px 0;
+    --width: 100%;
+    width: var(--width);
+    height: calc(var(--width) * 0.75);
+  }
+  
+  ul {
+    margin: 0 0 0.5em 0;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .highlight {
+      font-size: 1em;
+      margin: 0 0 20px 0;
+      padding: 0.2em 1em;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    button:active {
+      background-color: darkRed;
+    }
+  }
+  
+  

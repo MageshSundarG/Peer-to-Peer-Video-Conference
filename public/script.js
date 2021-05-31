@@ -190,3 +190,8 @@ if ((navigator.mediaDevices && 'getDisplayMedia' in navigator.mediaDevices)) {
 } else {
   errorMsg('getDisplayMedia is not supported');
 }
+
+var button = document.getElementById('videoStream');
+button.onclick = function() {
+  location.assign('/stream');
+}

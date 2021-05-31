@@ -38,10 +38,9 @@
          }
 
          video {
-            height: 300px;
-            width: 400px;
-            object-fit: cover;
-            padding: 8px;
+            height: 500px;
+            width: 600px;
+            padding: 2px;
          }
       </style>
    </head>
@@ -87,7 +86,12 @@
                   </div>
                </div>
                <div class="main__controls__block">
-                  <div class="main__controls__button">
+                  <div id="videoStream" class="main__controls__streamButton">
+                     <i class="fas fa-video"></i>
+                     <span>Stream</span>
+                  </div>
+                  <div class="main__controls__leaveButton">
+                     <i class="fas fa-sign-out-alt"></i>
                      <span class="leave_meeting">Leave Meeting</span>
                   </div>
                </div>
