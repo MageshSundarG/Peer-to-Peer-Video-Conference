@@ -75,6 +75,15 @@
     font-size: 24px;
 }
 
+.main__controls__startButton:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.main__controls__startButton i {
+    font-size: 24px;
+}
+
 .main__right {
     display: flex;
     flex-direction: column;

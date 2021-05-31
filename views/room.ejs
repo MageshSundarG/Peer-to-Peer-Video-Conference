@@ -46,6 +46,9 @@
                <div id="video-grid">
 
                </div>
+               <video id="gum-local" autoplay playsinline muted>
+
+               </video>
             </div>
             <div class="main__controls">
                <div class="main__controls__block">
@@ -56,6 +59,10 @@
                   <div onclick="playStop()" class="main__controls__button main__video_button">
                      <i class="fas fa-video"></i>
                      <span>Stop Video</span>
+                  </div>
+                  <div id="startButton" class="main__controls__startButton" disabled>
+                     <i class="fas fa-desktop"></i>
+                     <span>Screen Share</span>
                   </div>
                </div>
                <div class="main__controls__block">
@@ -84,6 +91,9 @@
                <h6>Chat</h6>
             </div>
             <div class="main__chat_window">
+               <div id="errorMsg">
+
+               </div>
                <ul class="messages">
 
                </ul>
