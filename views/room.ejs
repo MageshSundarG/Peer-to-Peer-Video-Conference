@@ -3,7 +3,14 @@
 
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Video Sharing & Video Conferencing">
+      <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+      <meta itemprop="description" content="Client-side Video Sharing & Video Conferencing">
+      <meta itemprop="name" content="Video Sharing & Video Conferencing">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta id="theme-color" name="theme-color" content="#ffffff">
+
+      <base target="_blank">
       <title>Document</title>
       <script>
          const ROOM_ID = "<%= roomId %>"
@@ -104,6 +111,7 @@
             </div>
          </div>
       </div>
+      <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
       <script src="script.js"></script>
    </body>
 
